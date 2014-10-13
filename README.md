@@ -3,8 +3,8 @@
 
 ### Intro
 
-Privacy policies are broken. Most are so obfuscated in legalese that only a trained attorney can make sense of them, and even the ones that are written in plain English are as long as a good novel. 
-In a world where privacy is more important than ever, Private Parts is an easy to use tool that helps you create a beautiful, responsive, and clear privacy policy for your business that your customers can actually understand. 
+Privacy policies are broken. Most are so obfuscated in legalese that only a trained attorney can make sense of them, and even the ones that are written in plain English are as long as a good novel.
+In a world where privacy is more important than ever, Private Parts is an easy to use tool that helps you create a beautiful, responsive, and clear privacy policy for your business that your customers can actually understand.
 The best part? We've designed Private Parts to make the process as painless as possible. If you already have your content ready, you should be up and running in less than 5 minutes.
 
 Check out an example of the finished product at
@@ -28,7 +28,7 @@ The instructions below have been designed generically for 'developers' and 'lawy
 
 #### For lawyers
 
-1. Download a copy of ``docs/Legal Questionnaire.xls`` and follow the instructions on both tabs. Your answers to the questions in this spreadsheet will form the backbone for the content in your short form privacy policy. 
+1. Download a copy of ``docs/Legal Questionnaire.xls`` and follow the instructions on both tabs. Your answers to the questions in this spreadsheet will form the backbone for the content in your short form privacy policy.
 ## Remember that the point is to create a *short* privacy policy. Keep your answers below 200 characters, but the shorter, the better.
 2. Hand off the completed spreadsheet to your developer, who will copy & paste your responses into the ``config.json`` source file.
 
@@ -55,8 +55,12 @@ If you want to further customize the policy, you can include additional code in 
 
 When you're done entering your content and customizing the look and feel of your privacy policy, just run ``grunt dist``. This will generate two files, and you only need to use one of them:
 
-- ``build/html/index.html``: A complete, responsive web page with all of the required CSS and JavaScript code minified and embedded into the HTML. You can just drop this file on any web server and you're done. 
+- ``build/html/index.html``: A complete, responsive web page with all of the required CSS and JavaScript code minified and embedded into the HTML. You can just drop this file on any web server and you're done.
 - ``build/html/main.html``: Just the body of the web page, so you can integrate it with your website template (usually by adding a header and a footer)
+
+## Troubleshooting
+
+If you are using this in your app's webview and you experience an OS crash on iOS while viewing the page, the solution is to switch from UIWebView to WKWebView.
 
 ## Credits
 
